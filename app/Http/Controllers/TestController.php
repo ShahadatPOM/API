@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 class TestController extends Controller{
     public function test($name){
-        return 'this is from '. $name. ' controller';
+        return response('this is from '.$name.' controller')
+        ->header('name', $name);
     }
 }

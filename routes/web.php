@@ -40,6 +40,6 @@ $router->post('/{name}/{age}[/{city}]', function($name, $age, $city=null){
 
 $router->get('{name}/test', 'TestController@test');
 
-// API respons: respons area-> header & body; respons type-> string, json, redirect, download, xml
+// API response: response area-> header & body; response type-> string, json, redirect, download, xml
 
 
