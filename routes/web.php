@@ -21,3 +21,12 @@ $router->post('/call', function(){
     return 'call-back function demo';
 });
 
+//two type parameter can pass by route 1. required parameter, Optional parameter
+//required parameter
+$router->get('/name/{value}', function($value){
+    return $value;
+});
+
+$router->post('/{name}/{age}[/{city}]', function($name, $age, $city=null){
+    return $name.$age.$city;
+});
