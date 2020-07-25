@@ -38,3 +38,8 @@ $router->post('/{name}/{age}[/{city}]', function($name, $age, $city=null){
     return $name.$age.$city;
 });
 
+$router->get('{name}/test', 'TestController@test');
+
+// API respons: respons area-> header & body; respons type-> string, json, redirect, download, xml
+
+
