@@ -1,5 +1,12 @@
 <?php
 
+//Rest API: Rest-> Representational State Transfer & API->Application Programming Interface
+//client-server
+//stateless
+//cacheable
+//uniform interface
+
+
 $router->get('/', function () use ($router) {
     return 'i am get';
 });
@@ -30,3 +37,4 @@ $router->get('/name/{value}', function($value){
 $router->post('/{name}/{age}[/{city}]', function($name, $age, $city=null){
     return $name.$age.$city;
 });
+
